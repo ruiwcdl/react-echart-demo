@@ -48,9 +48,9 @@ module.exports = {
 		//添加了一个给打包后代码添加版权声明的插件
 		new webpack.BannerPlugin('版权所有，翻版必究'),
 		//依据一个简单的index.html模板，生成一个自动引用你打包后的JS文件的新index.html
-		// new HtmlWebpackPlugin({
-		// 	template: __dirname + "/src/html/index.tmpl.html"
-		// }),
+		new HtmlWebpackPlugin({
+			template: __dirname + "/src/html/index.tmpl.html"
+		}),
 		//允许你在修改组件代码后，自动刷新实时预览修改后的效果
 		new webpack.HotModuleReplacementPlugin(),
 		// //去除build文件中的残余文件,添加了hash之后，会导致改变文件内容后重新打包时，文件名不同而内容越来越多，因此这里介绍另外一个很好用的插件clean-webpack-plugin
