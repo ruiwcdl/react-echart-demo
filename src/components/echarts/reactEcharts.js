@@ -4,7 +4,7 @@
 
 import React, {Component} from 'react'
 import styles from '../../css/echarts.css';
-import echarts from 'echarts';
+import echarts from '../../../echarts';
 import { EchartRender } from './config'
 class ReactEcharts extends Component{
 	
